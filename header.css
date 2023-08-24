@@ -1,0 +1,182 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(210, 206, 206);
+}
+
+.left {
+
+    width: 150px;
+    align-items: center;
+    display: flex
+}
+
+.mid {
+
+    flex: 1;
+    margin-left: 105px;
+    margin-right: 100px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+
+.right {
+    margin-right: 20px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.hamburger {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.ytlogo {
+    height: 20px;
+
+}
+
+.voice-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.search-button {
+    height: 37px;
+    width: 66px;
+    background-color: rgb(235, 231, 231);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(195, 193, 193);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.tooltips {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -32px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+
+}
+
+.search-button:hover .tooltips,
+.voice-button:hover .tooltips,
+.icon-container:hover .tooltips {
+    opacity: 1;
+}
+
+.search-bar {
+    flex: 1;
+    height: 33px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(176, 173, 173);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 3px rgba(156, 155, 155, 0.1);
+    width: 0;
+
+
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+
+}
+
+.search-icon {
+    height: 25px;
+
+
+}
+
+.voice-pi {
+    height: 24px;
+
+    background-color: rgb(245, 243, 243);
+
+}
+
+.upload-icon {
+    height: 24px;
+
+
+}
+
+.yt-apps {
+    height: 24px;
+
+}
+
+.notification {
+    height: 24px;
+
+}
+
+.noti-container {
+    position: relative;
+}
+
+.noti-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+
+}
+
+.my-channel {
+    height: 32px;
+    border-radius: 60px;
+}
+
+.search-button,
+.voice-button,
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
